@@ -1,14 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Recipe from './components/recipe';
+import Ingredients from './components/ingredients';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
-        <Recipe />
+        <Ingredients />
     </div>
   );
-}
-
-export default App;
+};

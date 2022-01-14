@@ -1,17 +1,17 @@
+.App { 
+  background-color: #aac5fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+};
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-logo {
-  justify-content: center;
-  align-items: center;
-}
-
-.App {
-  background-color: #aac5fa;
-}
+};
 
 @keyframes App-logo-spin {
   from {
@@ -20,4 +20,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+};
