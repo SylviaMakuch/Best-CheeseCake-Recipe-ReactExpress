@@ -3,3 +3,17 @@ ul {
     line-height: 1.5;
     list-style-position: inside;
 };
+
+.main{
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    color: white;
+};
+.ingredients {
+    border-bottom: 6px solid red;
+};
+
+.instructions {
+    border-bottom: 6px solid red;
+};
+

@@ -13,9 +13,10 @@ export default function Recipe() {
   }, []);
 
   return (
-    <div className="recipe">
-      
-        <h3>Ingredients</h3>
+    <div className="main">
+      <div className="recipe">
+        <h1>Ricotta Cheescake Recipe</h1>
+        <h4>Ingredients</h4>
         <ul>
           {cheesecake.map(({ amount, ingredient }, index) => {
             return (
@@ -25,14 +26,14 @@ export default function Recipe() {
             );
           })}
         </ul>
-    
-          <p>
-              Bake at 325°F for 50 mins with a steel pan or bit longer with glass
-          </p>
-          <p>
-              How to know if ready? make sure the middle is not liquid
-          </p>
-
+      </div>
+      <div className="instructions">
+        <h4>Instructions</h4>
+        <p>
+          Bake at 325°F for 50 mins with a steel pan or bit longer with glass
+        </p>
+        <p>How to know if ready? make sure the middle is not liquid</p>
+      </div>
     </div>
   );
 }
