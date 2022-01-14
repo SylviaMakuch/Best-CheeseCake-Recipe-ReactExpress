@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get('/api/ricottacheesecake', (req, res) => {
-    const cheescake = [
+    const cheesecake = [
     {id: 1, amount :'226g', ingredient:'cream cheese, room temp' },
     {id: 2, amount :'3/4 cup', ingredient:'sugar'},
     {id: 3, amount :'1/4 teaspoon', ingredient:'salt' },
@@ -13,7 +13,7 @@ app.get('/api/ricottacheesecake', (req, res) => {
     {id: 7, amount :'1 teaspoon', ingredient:'vanilla'},
     {id: 8, amount :'combine', ingredient:'orange zest' },
     ];
-    res.json(cheescake);
+    res.json(cheesecake);
 });
 const port = 4000;
 
