@@ -3,17 +3,17 @@ const express = require("express");
 const app = express();
 
 app.get('/api/ricottacheesecake', (req, res) => {
-    const cheesecake = [
-    {id: 1, amount :'226g', ingredient:'cream cheese, room temp' },
-    {id: 2, amount :'3/4 cup', ingredient:'sugar'},
-    {id: 3, amount :'1/4 teaspoon', ingredient:'salt' },
-    {id: 4, amount :'900g', ingredient:'ricotta, whole milk'},
-    {id: 5, amount :'3', ingredient:'eggs' },
-    {id: 6, amount :'1 tablespoon', ingredient:'cornstarch' },
-    {id: 7, amount :'1 teaspoon', ingredient:'vanilla'},
-    {id: 8, amount :'combine', ingredient:'orange zest' },
+    const ingredients = [
+    {amount :'226g', ingredient:'cream cheese, room temp' },
+    {amount :'3/4 cup', ingredient:'sugar'},
+    {amount :'1/4 teaspoon', ingredient:'salt' },
+    {amount :'900g', ingredient:'ricotta, whole milk'},
+    {amount :'3', ingredient:'eggs' },
+    {amount :'1 tablespoon', ingredient:'cornstarch' },
+    {amount :'1 teaspoon', ingredient:'vanilla'},
+    {amount :'2 teaspoons ', ingredient:'orange zest' },
     ];
-    res.json(cheesecake);
+    res.json(ingredients);
 });
 const port = 4000;
 

@@ -8,18 +8,17 @@ export default function Recipe() {
     useEffect(() =>{
         fetch("/api/ricottacheesecake")
         .then(res => res.json())
-        .then(cheesecake => setCheesecake(cheesecake))
+        .then(ingredients => setCheesecake(ingredients))
         console.log(cheesecake)
          }, []);
 
     return (
       <div className="recipe">
-        <h2></h2>
+        <h3>Ingredients</h3>
         <ul>
-            {cheesecake.map(cheescake => {
-                return <li key={cheesecake.id}> {cheesecake.amount} {cheesecake.ingredient}</li>
-            }
-                )}
+            {cheesecake.map(({amount, ingredient}, index) =>{
+                return <li key={index}>{amount}  {ingredient}</li>
+            })}
         </ul>
       </div>
     );
