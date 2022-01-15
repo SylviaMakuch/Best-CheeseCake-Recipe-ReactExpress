@@ -1,6 +1,7 @@
 # Best-CheeseCake-Recipe-ReactExpress
 
- <img align="center"  src="https://im7.ezgif.com/tmp/ezgif-7-49da7535d2.gif" />
+![cake](https://user-images.githubusercontent.com/81345880/149613271-c0a42b8d-9fc9-423e-828d-5474b4d6cf48.gif)
+
 
 
 <h1>Install dependencies for server</h1>
