@@ -1,0 +1,11 @@
+ul {
+  list-style: none;
+  line-height: 1.5;
+  list-style-position: inside;
+  color: white;
+  font-size: 25px;
+};
+
+h1 {
+    color: white;
+}

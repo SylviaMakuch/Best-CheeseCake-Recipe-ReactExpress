@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Ingredients from "./components/ingredients";
+import Cake from "./components/cake";
+import TextDiv from "./components/textdiv";
 
 export default function App() {
   return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <Ingredients />
+    <div className="Main">
+      <Cake />
+      <TextDiv />
     </div>
   );
 }

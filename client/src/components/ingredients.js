@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import "./ingredients.css";
 
 export default function Ingredients() {
   const [cheesecake, setCheesecake] = useState([]);
@@ -12,10 +13,8 @@ export default function Ingredients() {
   }, []);
 
   return (
-    <div className="main">
-      <div className="recipe">
-        <h1>Ricotta Cheescake Recipe</h1>
-        <h4>Ingredients</h4>
+      <div className="Recipe">
+        <h1>Ingredients</h1>
         <ul>
           {cheesecake.map(({ amount, ingredient }, index) => {
             return (
@@ -26,6 +25,6 @@ export default function Ingredients() {
           })}
         </ul>
       </div>
-      </div>
+     
   );
 }
